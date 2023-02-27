@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.backgroundtop {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.backgroundbot {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    background: linear-gradient(to top left, white 50%, 50%, lightblue);
+    z-index: -1;
+}
+
+.aboutme {
+    padding: 20px;
+    position: relative;
+    margin: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutme .portrait {    
+    position: relative;
+    margin: -50px 0 0 -50px;
+    float: left;
+    width: 40%;
+}
+
+.aboutme .portrait h1 {
+    margin-left: -10px;
+    position: absolute;
+    bottom: 20px;    
+    width: 100%;
+    font-size: 3.5vw;
+    /* font-weight: lighter; */
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px 0px black;
+}
+
+.portrait img {
+    width: 95%;
+    filter: brightness(75%);
+}
+
+.aboutme .textfield h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.aboutme .textfield p{
+    color: #333;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+
+.content h2 {
+    margin-left: 10%;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+
+.content .mywork {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+    gap: 3%;
+
+}
+
+.content .card {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 480px) {
+    .aboutme .portrait {
+        width: 100%;
+        margin: 0px auto 10px;
+    }
+
+    .aboutme .portrait h1 {
+        text-align: left;
+        font-size: 10vw;
+        margin-left: 10px;
+    }
+    
+    .portrait img {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+}
