@@ -30,7 +30,7 @@
 .aboutme {
     padding: 20px;
     position: relative;
-    margin: 10%;
+    margin: 8%;
     margin-bottom: 5%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -38,13 +38,12 @@
 
 .aboutme .portrait {    
     position: relative;
-    margin: -50px 0 0 -50px;
+    margin: -8% 0 0 -8%;
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 .aboutme .portrait h1 {
-    margin-left: -10px;
     position: absolute;
     bottom: 20px;    
     width: 100%;
@@ -58,6 +57,7 @@
 .portrait img {
     width: 95%;
     filter: brightness(75%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
 .aboutme .textfield h2 {
@@ -73,26 +73,48 @@
     padding-bottom: 20px;
 }
 
-
-.content h2 {
-    margin-left: 10%;
-    font-size: 2.5rem;
-    font-weight: lighter;
+.content {
+    margin: 5% 0;
 }
 
+.content h2 {
+    margin: 0 8%;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
 
 .content .mywork {
     display: flex;
     flex-wrap: wrap;
-    padding: 10%;
-    gap: 3%;
-
+    justify-content: space-between;
+    padding: 20px 8%;
+    gap: 20px;
 }
 
 .content .card {
-    height: 250px;
-    width: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: sans-serif;
+    min-width: 280px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.description {
+    padding: 20px;
+    position: relative;
+    height: 45%;
+}
+
+.footer {
+    background-color: lightblue;
+    height: 20vh;
+    bottom: 0px;
 }
 
 @media screen and (max-width: 480px) {
@@ -104,7 +126,6 @@
     .aboutme .portrait h1 {
         text-align: left;
         font-size: 10vw;
-        margin-left: 10px;
     }
     
     .portrait img {
@@ -114,5 +135,5 @@
     h2 {
         text-align: center;
     }
-    
+
 }
