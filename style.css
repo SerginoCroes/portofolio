@@ -127,7 +127,7 @@
     .aboutme .portrait h1 {
         text-align: left;
         font-size: 10vw;
-        margin: 5px;
+        padding: 5px;
     }
     
     .portrait img {
