@@ -54,6 +54,7 @@
     text-shadow: 2px 2px 0px black;
 }
 
+
 .portrait img {
     width: 95%;
     filter: brightness(80%);
@@ -71,6 +72,17 @@
     font-family: sans-serif;
     font-size: 1.4rem;
     padding-bottom: 20px;
+}
+
+.textfield .aboutimgs {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    margin: 10px 20px;
+}
+
+.aboutimgs img {
+    margin: 0px 5px;
 }
 
 .content {
@@ -108,7 +120,15 @@
 .description {
     padding: 10px 20px;
     position: relative;
-    height: 45%;
+}
+
+.description .title {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.title img {
+    width: 20px;
 }
 
 .description p {
