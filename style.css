@@ -179,8 +179,11 @@
         width: 100%;
     }
 
+    .textfield .aboutimgs {
+        justify-content: center;
+    }
+
     .content h2, .textfield h2 {
         text-align: center;
     }
-
 }
