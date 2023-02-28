@@ -51,12 +51,12 @@
     /* font-weight: lighter; */
     text-align: center;
     color:white;
-    text-shadow: 3px 3px 0px black;
+    text-shadow: 2px 2px 0px black;
 }
 
 .portrait img {
     width: 95%;
-    filter: brightness(75%);
+    filter: brightness(80%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -121,7 +121,7 @@
     padding: 20px 8%;
     position: relative;
     background-color: lightblue;
-    height: 20vh;
+    height: 180px;
     bottom: 0px;
 }
 
